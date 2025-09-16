@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+leticiarobaina.com	TRUE	/	FALSE	1999999999	PHPSESSID	fbec918073daf1dfb19d9da73b627cf4
+leticiarobaina.com	TRUE	/	FALSE	1999999999	lang-auto-redirect	62
+www.leticiarobaina.com	TRUE	/	FALSE	1999999999	os	windows
+www.leticiarobaina.com	TRUE	/	FALSE	1999999999	brws	unknown
+www.leticiarobaina.com	TRUE	/	FALSE	1999999999	brwsv	4
+www.leticiarobaina.com	TRUE	/	FALSE	1999999999	show_preview_notice	0
+

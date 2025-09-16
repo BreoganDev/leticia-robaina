@@ -1,0 +1,121 @@
+/* BASIC */
+.pty-layer
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.pty-layer.visible
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* BACKDROP */
+.pty-layer-backdrop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+}
+
+/* MODAL */
+.pty-layer-modal
+{
+    position: fixed;
+    background: #ffffff;
+    min-width: 200px;
+    max-width: 90vw;
+    transform: translateY(10px) scale(.9);
+    box-shadow: 0px 0px 15px #362D2B4D;
+    border-radius: var(--border-radius-element);
+}
+
+.pty-layer-modal.visible
+{
+    transform: translateY(0) scale(1);
+}
+
+.pty-layer-modal-header
+{
+    padding: 20px 40px 5px 20px;
+}
+
+.pty-layer-modal-body
+{
+    padding: 20px;
+    max-height: 70vh;
+    overflow-x: auto;
+}
+
+.pty-layer-modal-footer
+{
+    padding: 5px 20px 20px 20px;
+}
+
+@media all and (min-width: 1024px) {
+    .pty-layer-modal[data-width="sm"]
+    {
+        width: 600px;
+        max-width: 100%;
+    }
+
+    .pty-layer-modal[data-width="xs"]
+    {
+        width: 320px;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+
+    .pty-layer-modal-body
+    {
+        max-height: 60vh;
+    }
+
+    .pty-layer-modal
+    {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: unset;
+        max-height: 90vh;
+        transform: translateY(100%);
+        border-radius: 0;
+    }
+
+    .pty-layer-modal.visible
+    {
+        transform: translateY(0);
+    }
+
+    .pty-layer-modal-body::-webkit-scrollbar
+    {
+        width: 3px;
+        background-color: #eee;
+    }
+      
+    .pty-layer-modal-body::-webkit-scrollbar-thumb
+    {
+        background-color: #999;
+    }
+      
+    .pty-layer-modal-body
+    {
+        scrollbar-width: thin; /* Hace que las barras de desplazamiento siempre sean visibles en navegadores que lo soporten */
+        scrollbar-color: #999 #f5f5f5; /* Color de las barras de desplazamiento (barras, fondo) */
+    }
+  
+}
+
+@media all and (max-height: 670px) {
+    .pty-layer-modal-body
+    {
+        max-height: 40vh;
+    }
+}
