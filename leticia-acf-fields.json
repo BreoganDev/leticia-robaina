@@ -1,0 +1,335 @@
+[
+  {
+    "key": "group_home_page_fields",
+    "title": "Página Principal - Todos los Campos",
+    "fields": [
+      {
+        "key": "field_hero_title",
+        "label": "Hero - Título Principal",
+        "name": "hero_title",
+        "type": "text",
+        "instructions": "Título grande del hero section",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "IMAGEN REAL",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+      },
+      {
+        "key": "field_hero_subtitle",
+        "label": "Hero - Subtítulo",
+        "name": "hero_subtitle",
+        "type": "textarea",
+        "instructions": "Texto debajo del título principal",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "Sé tu propia asesora de imagen.",
+        "placeholder": "",
+        "maxlength": "",
+        "rows": 3,
+        "new_lines": ""
+      },
+      {
+        "key": "field_hero_image",
+        "label": "Hero - Imagen de Fondo",
+        "name": "hero_image",
+        "type": "image",
+        "instructions": "Imagen de fondo del hero section (recomendado: 2500x1668px)",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "medium",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+      },
+      {
+        "key": "field_section1_title",
+        "label": "Sección 1 - Título",
+        "name": "section1_title",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "¿TE SIENTES INSATISFECHA CON TU ESTILO?",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+      },
+      {
+        "key": "field_section1_content",
+        "label": "Sección 1 - Contenido",
+        "name": "section1_content",
+        "type": "wysiwyg",
+        "instructions": "Texto completo de la primera sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 1,
+        "delay": 0
+      },
+      {
+        "key": "field_section1_image",
+        "label": "Sección 1 - Imagen",
+        "name": "section1_image",
+        "type": "image",
+        "instructions": "Imagen que acompaña a la primera sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "medium",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+      },
+      {
+        "key": "field_section2_title",
+        "label": "Sección 2 - Título",
+        "name": "section2_title",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "UN ESTILO QUE TE SIENTA BIEN…",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+      },
+      {
+        "key": "field_section2_content",
+        "label": "Sección 2 - Contenido",
+        "name": "section2_content",
+        "type": "wysiwyg",
+        "instructions": "Texto completo de la segunda sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 1,
+        "delay": 0
+      },
+      {
+        "key": "field_section2_image",
+        "label": "Sección 2 - Imagen",
+        "name": "section2_image",
+        "type": "image",
+        "instructions": "Imagen que acompaña a la segunda sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "medium",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+      },
+      {
+        "key": "field_section3_title",
+        "label": "Sección 3 - Título",
+        "name": "section3_title",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "EL PODER DE LLEVAR TU PROPIO ESTILO",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+      },
+      {
+        "key": "field_section3_content",
+        "label": "Sección 3 - Contenido",
+        "name": "section3_content",
+        "type": "wysiwyg",
+        "instructions": "Texto completo de la tercera sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 1,
+        "delay": 0
+      },
+      {
+        "key": "field_section3_image",
+        "label": "Sección 3 - Imagen",
+        "name": "section3_image",
+        "type": "image",
+        "instructions": "Imagen que acompaña a la tercera sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "medium",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+      },
+      {
+        "key": "field_section4_title",
+        "label": "Sección 4 - Título",
+        "name": "section4_title",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "LA BELLEZA INTERIOR CAUTIVA",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+      },
+      {
+        "key": "field_section4_content",
+        "label": "Sección 4 - Contenido",
+        "name": "section4_content",
+        "type": "wysiwyg",
+        "instructions": "Texto sobre el MÉTODO LONDRES y metodología",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 1,
+        "delay": 0
+      },
+      {
+        "key": "field_section4_image",
+        "label": "Sección 4 - Imagen",
+        "name": "section4_image",
+        "type": "image",
+        "instructions": "Imagen que acompaña a la cuarta sección",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "medium",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "page-home.php"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Campos para la página principal del sitio de Leticia Robaina"
+  }
+]

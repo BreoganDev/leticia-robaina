@@ -1,0 +1,220 @@
+.consent-mode-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.consent-mode-wrapper:not([hidden]) {
+    display: flex;
+    animation: consentmodefadein .2s ease-in forwards
+}
+
+.consent-mode-wrapper:not([hidden]) .window {
+    animation: consentmodeopening .2s ease-in forwards
+}
+
+@media only screen and (max-width:768px) {
+    .consent-mode-wrapper {
+        align-items: end
+    }
+}
+
+.consent-mode-wrapper .window {
+    width: 700px;
+    max-width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: var(--border-radius)
+}
+
+@media only screen and (max-width:768px) {
+    .consent-mode-wrapper .window {
+        display: flex;
+        flex-flow: column;
+        max-height: calc(90vh - 120px)
+    }
+}
+
+.consent-mode-wrapper .window .body {
+    max-height: 75vh;
+    overflow: auto
+}
+
+@media only screen and (max-width:768px) {
+    .consent-mode-wrapper .window .body {
+        max-height: unset
+    }
+}
+
+.consent-mode-wrapper .window .body .window-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 5px 0
+}
+
+.consent-mode-wrapper .window .body p {
+    margin: 0 0 15px 0
+}
+
+.consent-mode-wrapper .window .body .cookies-collection .cookie-item {
+    margin-bottom: 15px
+}
+
+.consent-mode-wrapper .window .body .cookies-collection .cookie-item .cookie-heading {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 15px 20px
+}
+
+.consent-mode-wrapper .window .body .cookies-collection .cookie-item .cookie-heading a {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: inherit;
+    text-decoration: none !important
+}
+
+.consent-mode-wrapper .window .body .cookies-collection .cookie-item .cookie-heading a svg {
+    width: 18px;
+    transform: rotate(90deg);
+    margin-right: 10px
+}
+
+.consent-mode-wrapper .window .body .cookies-collection .cookie-item .cookie-heading a.opened svg {
+    transform: rotate(270deg)
+}
+
+.consent-mode-wrapper .window .body .cookies-collection .cookie-item .cookie-body {
+    font-size: 12px;
+    background-color: #ebebeb;
+    padding: 20px 30px
+}
+
+.consent-mode-wrapper .window .footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between
+}
+
+@media only screen and (max-width:768px) {
+    .consent-mode-wrapper .window .footer {
+        display: flex;
+        flex-flow: column-reverse
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .consent-mode-wrapper .window .footer .group2 {
+        display: flex;
+        flex-flow: column-reverse
+    }
+}
+
+.consent-mode-wrapper .window .footer .btn {
+    font-size: 14px !important;
+    padding: 11px 21px;
+    height: auto !important;
+    line-height: normal !important;
+    letter-spacing: 0;
+}
+
+.consent-mode-wrapper .window .footer .btn+.btn {
+    margin-left: 10px
+}
+
+@media only screen and (max-width:768px) {
+    .consent-mode-wrapper .window .footer .btn {
+        display: block;
+        margin: 10px 0 0 0 !important;
+        padding: 10px 25px
+    }
+}
+
+.consent-mode-wrapper .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    cursor: pointer
+}
+
+.consent-mode-wrapper .switch input {
+    position: absolute;
+    appearance: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.consent-mode-wrapper .switch input:focus {
+    outline: 2px dotted;
+    outline-offset: 1px
+}
+
+.consent-mode-wrapper .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px
+}
+
+.consent-mode-wrapper .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%
+}
+
+.consent-mode-wrapper input:checked+.slider {
+    background-color: #84bc00
+}
+
+.consent-mode-wrapper input:focus+.slider {
+    box-shadow: 0 0 1px #84bc00
+}
+
+.consent-mode-wrapper input:checked+.slider:before {
+    transform: translateX(26px)
+}
+
+@keyframes consentmodefadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes consentmodeopening {
+    from {
+        transform: scale(.95)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
